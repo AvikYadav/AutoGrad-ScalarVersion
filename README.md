@@ -53,8 +53,8 @@ b = Value(6, label="B")
 c = a * b
 d = c + a
 
-d.backward()```
-
+d.backward()
+```
 
 This builds the computation graph dynamically and computes gradients for a and b.
 
