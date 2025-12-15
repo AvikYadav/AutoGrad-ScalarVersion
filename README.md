@@ -1,10 +1,10 @@
-🧮 Scalar Autograd Engine (From Scratch)
+**Scalar Autograd Engine (From Scratch)**
 
 This notebook implements a minimal automatic differentiation engine for scalar values, inspired by how frameworks like PyTorch Autograd work internally — but built completely from scratch for learning purposes.
 
 The goal is to understand backpropagation, computation graphs, and gradient flow at the most fundamental level.
 
-📌 What this project does
+**What this project does**
 
 Implements a Value class representing a scalar with gradient tracking
 
@@ -26,7 +26,7 @@ Visualizes the computation graph using Graphviz
 
 This is a learning-focused implementation, not a performance-oriented one.
 
-🧠 Core Idea
+**Core Idea**
 
 Every scalar value is treated as a node in a graph:
 
@@ -48,7 +48,7 @@ Each node applies the chain rule
 
 Gradients are accumulated at leaf nodes
 
-✨ Features
+**Features**
 
 ✔ Custom scalar autograd engine
 
@@ -64,12 +64,12 @@ Gradients are accumulated at leaf nodes
 
 ✔ Educational and easy to extend
 
-📂 File Structure
+**File Structure**
 Practice/
 ├── ScalarDerivative.ipynb   # Main notebook (implementation + examples)
 └── README.md
 
-🚀 Example Usage
+**Example Usage**
 a = Value(5, label="A")
 b = Value(6, label="B")
 c = a * b
@@ -80,7 +80,7 @@ d.backward()
 
 This builds a computation graph internally and computes gradients for a and b.
 
-📊 Graph Visualization
+**Graph Visualization**
 
 The computation graph can be rendered using Graphviz, showing:
 
@@ -92,7 +92,7 @@ Directed edges → data flow
 
 This makes gradient flow explicit and intuitive.
 
-🧪 Why this project exists
+**Why this project exists**
 
 This project is meant to help you:
 
@@ -106,7 +106,7 @@ Bridge the gap between math and deep learning frameworks
 
 If you understand this notebook, you understand the core of PyTorch autograd.
 
-⚠️ Limitations (Intentional)
+**Limitations (Intentional)**
 
 Scalars only (no tensors)
 
@@ -118,19 +118,7 @@ No performance optimizations
 
 These limitations are intentional to keep the logic transparent and educational.
 
-🔮 Possible Extensions
-
-Add more operations (tanh, relu, exp)
-
-Implement topological sorting explicitly
-
-Add tensor support
-
-Visualize backward pass separately
-
-Compare gradients with PyTorch
-
-📚 Inspiration
+**Inspiration**
 
 PyTorch Autograd
 
@@ -138,7 +126,7 @@ micrograd by Andrej Karpathy
 
 Computational graph theory
 
-🏁 Final Note
+**Final Note**
 
 This notebook is not about efficiency — it’s about clarity.
 
