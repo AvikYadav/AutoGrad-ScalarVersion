@@ -1,0 +1,16 @@
+{
+  "title": "AutoGrad",
+  "tagline": "Back propogation from scratch",
+  "shortSummary": "This project is a minimal automatic differentiation engine designed purely for educational purposes. By processing scalar values and building dynamic computation graphs with Graphviz visualization, it demystifies backpropagation and the chain rule. Intentional limitations, like omitting tensors, ensure the core mechanics behind frameworks like PyTorch remain completely transparent and understandable.",
+
+  "github": {
+    "repoUrl": "https://github.com/AvikYadav/AutoGrad-ScalarVersion/",
+    "coverImagePath": "cover.png",
+    "showcaseImagePath": "main.png"
+  },
+
+  "deployment": {
+    "isLive": false,
+    "liveUrl": "https://easy-auth.dev"
+  }
+}
