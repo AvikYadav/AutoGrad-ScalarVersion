@@ -6,19 +6,19 @@ This project mirrors the core ideas behind **PyTorch Autograd**, but strips ever
 
 ---
 
-## ✨ Highlights
+## Highlights
 
-- 🧠 Custom **scalar autograd engine**
-- 🔗 Dynamic **computation graph construction**
-- ➕ Operator overloading (`+`, `*`, `**`)
-- 🔄 Manual backward functions (chain rule)
-- 📐 Gradient accumulation
-- 📊 **Graphviz visualization** of the computation graph
-- 🎓 Designed purely for learning & clarity
+-  Custom **scalar autograd engine**
+-  Dynamic **computation graph construction**
+-  Operator overloading (`+`, `*`, `**`)
+-  Manual backward functions (chain rule)
+-  Gradient accumulation
+-  **Graphviz visualization** of the computation graph
+-  Designed purely for learning & clarity
 
 ---
 
-## 📌 Core Concept
+##  Core Concept
 
 Each scalar value is treated as a node in a **directed acyclic graph (DAG)**.
 
@@ -33,18 +33,8 @@ During backpropagation:
 - each operation applies the **chain rule**
 - gradients accumulate at leaf nodes
 
----
 
-## 🧱 File Structure
-
-Practice/
-├── ScalarDerivative.ipynb # Main notebook (engine + examples)
-└── README.md
-
-
----
-
-## 🚀 Example
+## Example
 
 ```python
 a = Value(5, label="A")
@@ -58,19 +48,19 @@ d.backward()
 
 This builds the computation graph dynamically and computes gradients for a and b.
 
-📊 **Graph Visualization**
+**Graph Visualization**
 
 The computation graph can be rendered using Graphviz, where:
 
-🟦 Rectangular nodes → scalar values (data, grad)
+ Rectangular nodes → scalar values (data, grad)
 
-⚪ Circular nodes → operations (+, *)
+ Circular nodes → operations (+, *)
 
-➡️ Directed edges → data flow
+ Directed edges → data flow
 
 This makes gradient propagation explicit and visual, which is extremely useful for understanding backprop.
 
-🎯 **Why this exists**
+ **Why this exists**
 
 This project is meant to help you:
 
@@ -84,7 +74,7 @@ connect math → code → deep learning frameworks
 
 If you understand this notebook, you understand the core of modern deep learning frameworks.
 
-⚠️ Limitations (Intentional)
+ Limitations (Intentional)
 
 Scalars only (no tensors)
 
@@ -95,21 +85,5 @@ No vectorization
 No performance optimizations
 
 These constraints keep the implementation simple, readable, and educational.
-
-📚 Inspiration
-
-PyTorch Autograd
-
-micrograd by Andrej Karpathy
-
-Computational graph theory
-
-🏁 Final Note
-
-This project is not about speed or scale.
-
-It’s about understanding.
-
-If you can build autograd for scalars, you truly understand backpropagation.
 
 ⭐ If this helped you, consider starring the repo!
