@@ -51,39 +51,17 @@ This builds the computation graph dynamically and computes gradients for a and b
 **Graph Visualization**
 
 The computation graph can be rendered using Graphviz, where:
-
  Rectangular nodes → scalar values (data, grad)
-
  Circular nodes → operations (+, *)
-
  Directed edges → data flow
 
 This makes gradient propagation explicit and visual, which is extremely useful for understanding backprop.
 
- **Why this exists**
 
-This project is meant to help you:
-
-truly understand how autograd works internally
-
-demystify backpropagation
-
-see computation graphs instead of just equations
-
-connect math → code → deep learning frameworks
-
-If you understand this notebook, you understand the core of modern deep learning frameworks.
-
- Limitations (Intentional)
+**Limitations (Intentional)**
 
 Scalars only (no tensors)
-
 No broadcasting
-
 No vectorization
-
 No performance optimizations
-
 These constraints keep the implementation simple, readable, and educational.
-
-⭐ If this helped you, consider starring the repo!
